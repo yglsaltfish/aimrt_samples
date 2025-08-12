@@ -19,7 +19,8 @@ target_include_directories(
 target_link_libraries(
   helloworld_app
   PRIVATE aimrt::runtime::core
-          helloworld::helloworld_module)
+          helloworld::helloworld_module
+          helloworld::helloworld_module2)
 
 if(AIMRT_SAMPLES_INSTALL)
   install(TARGETS helloworld_app RUNTIME DESTINATION bin)

@@ -6,6 +6,7 @@
 
 #include "core/aimrt_core.h"
 #include "helloworld_module/helloworld_module.h"
+#include "helloworld_module2/helloworld_module.h"
 
 using namespace aimrt::runtime::core;
 
@@ -33,7 +34,11 @@ int32_t main(int32_t argc, char **argv) {
 
     // register module you want to use
     HelloWorldModule helloworld_module;
+    HelloWorldModule2 helloworld_module2;
+    core.GetModuleManager().RegisterModule(helloworld_module2.NativeHandle());
     core.GetModuleManager().RegisterModule(helloworld_module.NativeHandle());
+
+
 
     // get configuration file path from command line argument
     AimRTCore::Options options;

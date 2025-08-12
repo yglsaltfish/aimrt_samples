@@ -2,6 +2,7 @@
 # All rights reserved.
 
 add_subdirectory(module/helloworld_module)
+add_subdirectory(module/helloworld_module2)
 
 add_subdirectory(app/helloworld_app)
 
