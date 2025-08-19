@@ -9,7 +9,6 @@ fi
 
 # cmake
 cmake -B build \
-    -DCMAKE_BUILD_TYPE=Release \
     -DAIMRT_SAMPLES_INSTALL=ON \
     -DCMAKE_INSTALL_PREFIX=./build/install \
     $@

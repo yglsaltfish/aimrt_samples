@@ -35,10 +35,9 @@ int32_t main(int32_t argc, char **argv) {
     // register module you want to use
     HelloWorldModule helloworld_module;
     HelloWorldModule2 helloworld_module2;
-    core.GetModuleManager().RegisterModule(helloworld_module2.NativeHandle());
+
     core.GetModuleManager().RegisterModule(helloworld_module.NativeHandle());
-
-
+    core.GetModuleManager().RegisterModule(helloworld_module2.NativeHandle());
 
     // get configuration file path from command line argument
     AimRTCore::Options options;

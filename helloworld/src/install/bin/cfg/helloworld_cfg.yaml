@@ -19,3 +19,9 @@ aimrt:
 HelloWorldModule:
   key1: val1
   key2: val2
+
+HelloWorldModule2:
+  key1: val1
+  key2: val2
+
+
